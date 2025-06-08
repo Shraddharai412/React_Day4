@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# 🚀 𝐃𝐀𝐘 𝟒 – 𝐂𝐎𝐍𝐓𝐄𝐗𝐓 𝐀𝐏𝐈 & 𝐓𝐇𝐄𝐌𝐄 𝐌𝐀𝐍𝐀𝐆𝐄𝐌𝐄𝐍𝐓 (𝐅𝐔𝐋𝐋 𝐒𝐓𝐀𝐂𝐊 𝐌𝐄𝐑𝐍 𝐓𝐑𝐀𝐈𝐍𝐈𝐍𝐆)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Day 4 of my Full Stack MERN training focused on **Context API**, where I learned to manage global state in React apps without prop drilling. Two mini-projects were built to demonstrate these concepts practically.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧠 𝐓𝐨𝐩𝐢𝐜𝐬 𝐂𝐨𝐯𝐞𝐫𝐞𝐝
 
-### `npm start`
+- 🔄 `createContext()` and `useContext()` hooks
+- 🧪 Building custom `Context Providers`
+- 🎨 Global **Theme Management** using `ThemeContext`
+- 🔐 User **Authentication State Management** with `AuthContext`
+- 🧩 Passing and consuming data via context across nested components
+- 💡 Component-level separation and best practices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💼 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬 𝐁𝐮𝐢𝐥𝐭
 
-### `npm test`
+### 🌗 𝐓𝐡𝐞𝐦𝐞 𝐓𝐨𝐠𝐠𝐥𝐞𝐫
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A React project that toggles between **light** and **dark** modes using a `ThemeContext`. The state is shared across all components without prop drilling.
 
-### `npm run build`
+**Key Features:**
+- Light/Dark theme toggle
+- Styled using conditional class names
+- Global state management using `useContext()`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Files:**
+- `ThemeContext.js` – Defines the context and toggle logic
+- `Dashboard.js` – Uses the context to apply styling and toggle button
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔐 𝐀𝐮𝐭𝐡𝐞𝐧𝐭𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐂𝐨𝐧𝐭𝐞𝐱𝐭
 
-### `npm run eject`
+This module simulates a simple login/logout functionality using a global context (`AuthContext`). Users can be logged in/out without passing state manually.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Key Features:**
+- Simulated login/logout with a mock username
+- Authentication state available across all components
+- Custom hook `useAuth()` for easier access
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Files:**
+- `AuthContext.js` – Manages user authentication state
+- `Dashboard.js` – Displays user state and login/logout buttons
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screenshot 2025-06-08 173125](https://github.com/user-attachments/assets/b185e92d-02bb-4e35-b24f-35c23d5cb439)
+![Screenshot 2025-06-08 173112](https://github.com/user-attachments/assets/fccfd41d-732e-45c9-9c27-c4a7f282e639)
+![Screenshot 2025-06-08 173102](https://github.com/user-attachments/assets/4d042f2d-106a-40a1-8835-157e99825384)
+![Screenshot 2025-06-08 173051](https://github.com/user-attachments/assets/87f5302f-f439-4bea-8214-87e911ca02dd)
+![Screenshot 2025-06-08 172909](https://github.com/user-attachments/assets/239f1bcd-4542-4e83-896f-8198f1118814)
+![Screenshot 2025-06-08 172852](https://github.com/user-attachments/assets/39690cc0-6639-47cf-9333-a7efa9e954ec)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
